@@ -5,14 +5,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-delay= int(os.getenv('DELAY'))
 twitch_user = os.getenv('TWITCH_USER')
 client_id = os.getenv('CLIENT_ID')
 client_secret = os.getenv('CLIENT_SECRET')
 webhook_url = os.getenv('WEBHOOK_URL')
-
-print(f'Delaying script by {delay} seconds')
-time.sleep(delay)
 
 print('Authenticating to Twitch')
 

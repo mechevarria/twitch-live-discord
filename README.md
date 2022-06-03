@@ -1,6 +1,6 @@
 # twitch-live-discord
 
-Python script to authenticate against the [Twitch API](https://dev.twitch.tv/docs/api/), get live user details and then post a rich text message to a channel in [Discord](https://discord.com/developers/docs/reference)
+Python script to authenticate against the [Twitch API](https://dev.twitch.tv/docs/api/), get live user details and then post a rich text message to a channel in [Discord](https://discord.com/developers/docs/reference). The reason I built this instead of using a bot is that most bots do not add a random number to the preview URL, resulting in a [cached image in Discord](https://discuss.dev.twitch.tv/t/feature-request-one-small-change-that-could-fix-the-discord-webhook-embed-cached-image-issues/27477)
 
 ## Setup
 * Register an application with [Twitch](https://dev.twitch.tv/). Note the `Client ID` and `Client Secret`
@@ -20,7 +20,6 @@ pip install python-dotenv
 * Create a `.env` file in the root directory to put the follow variables
 
 ```properties
-DELAY=0
 TWITCH_USER="twitch_streamer_name"
 CLIENT_ID="<your twitch app client id"
 CLIENT_SECRET="<your twitch dev secret>"
@@ -29,7 +28,7 @@ WEBHOOK_URL="https://discord.com/api/webhooks/<REST OF THE URL>
 
 ## Execute the script
 
-* Run the script to with the following command. The `DELAY` property can be used to wait a little bit after you go live to post the message
+* Run the script to with the following command.
 ```bash
 python3 script.py
 ```
