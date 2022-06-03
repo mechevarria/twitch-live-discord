@@ -19,11 +19,20 @@ pip install python-dotenv
 
 * Create a `.env` file in the root directory to put the follow variables
 
-![env](screenshots/env.png)
+```properties
+DELAY=0
+TWITCH_USER="twitch_streamer_name"
+CLIENT_ID="<your twitch app client id"
+CLIENT_SECRET="<your twitch dev secret>"
+WEBHOOK_URL="https://discord.com/api/webhooks/<REST OF THE URL>
+```
 
 ## Execute the script
 
-* Run the script to with the following command
+* Run the script to with the following command. The `DELAY` property can be used to wait a little bit after you go live to post the message
 ```bash
 python3 script.py
 ```
+
+* Example output in Discord
+![discord](screenshots/discord.png)
