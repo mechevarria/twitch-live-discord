@@ -16,7 +16,7 @@ Python script to authenticate against the [Twitch API](https://dev.twitch.tv/doc
 
 ``` bash
 sudo apt -y install python3-pip
-pip install python-dotenv
+pip install python-dotenv requests
 ```
 
 * Create a `.env` file in the root directory to put the follow variables
