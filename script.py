@@ -26,16 +26,21 @@ data = response.json()['data'][0]
 print('Posting message to Discord')
 game_name = data['game_name']
 title = data['title']
+thumbnail_url = data['thumbnail_url']
 timestamp = time.time_ns()
+
+#append timestamp to thumbnail url to prevent caching of image
+url_ts = f'{thumbnail_url.format(width=320, height=180)}?ts={timestamp}'
+
 discord_body = {
-  'content': f'@everyone {twitch_user} is now LIVE on Twitch! See you in chat! :rocket:',
+  'content': f'everyone {twitch_user} is now LIVE on Twitch! See you in chat! :rocket:',
   'embeds': [
     {
       'title': title,
       'url': f'https://www.twitch.tv/{twitch_user}',
       'color': 9174960,
       'image': {
-        'url': f'https://static-cdn.jtvnw.net/previews-ttv/live_user_{twitch_user}-320x180.jpg?ts={timestamp}'
+        'url': url_ts
       },
       'fields': [
         {
