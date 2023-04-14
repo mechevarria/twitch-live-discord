@@ -33,7 +33,7 @@ timestamp = time.time_ns()
 url_ts = f'{thumbnail_url.format(width=320, height=180)}?ts={timestamp}'
 
 discord_body = {
-  'content': f'everyone {twitch_user} is now LIVE on Twitch! See you in chat! :rocket:',
+  'content': f'@everyone {twitch_user} is now LIVE on Twitch! See you in chat! :rocket:',
   'embeds': [
     {
       'title': title,
