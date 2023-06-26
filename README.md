@@ -38,3 +38,16 @@ python3 script.py
 
 * Example output in Discord
 ![discord](screenshots/discord.png)
+
+## StreamDeck Integration
+
+* To launch with [StreamDeck](https://www.elgato.com/us/en/s/welcome-to-stream-deck) Use the **System** -> **Open** option
+### Windows
+* If you are using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) you can launch with this command 
+```bash
+wsl.exe "/usr/bin/python3" "/home/user/git/twitch-live-discord/script.py"
+```
+
+### Mac
+* StreamDeck will only open `.sh` files so select `bash-python.sh`
+> you will need to edit the hardcoded path to `script.py` inside this file to match your system
