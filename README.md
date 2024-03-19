@@ -12,11 +12,11 @@ Python script to authenticate against the [Twitch API](https://dev.twitch.tv/doc
 
 ![webhook](screenshots/webhook.png)
 
-* Make sure [python-dotenv](https://github.com/theskumar/python-dotenv) is installed
+* Make sure [python](https://www.python.org/) and [python-dotenv](https://github.com/theskumar/python-dotenv) are installed
 
 ``` bash
-sudo apt -y install python3-pip
-pip install python-dotenv requests
+brew install python
+pip3 install python-dotenv requests
 ```
 
 * Create a `.env` file in the root directory to put the follow variables
@@ -51,3 +51,5 @@ wsl.exe "/usr/bin/python3" "/home/user/git/twitch-live-discord/script.py"
 ### Mac
 * StreamDeck will only open `.sh` files so select `bash-python.sh`
 > you will need to edit the hardcoded path to `script.py` inside this file to match your system
+
+![streamdeck](screenshots/stream-deck.png)
