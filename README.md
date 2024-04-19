@@ -14,7 +14,7 @@ Python script to authenticate against the [Twitch API](https://dev.twitch.tv/doc
 
 * Make sure [python](https://www.python.org/) and [python-dotenv](https://github.com/theskumar/python-dotenv) are installed
 
-``` bash
+```bash
 brew install python
 /opt/homebrew/bin/python3 -m pip install --break-system-packages python-dotenv requests
 ```
