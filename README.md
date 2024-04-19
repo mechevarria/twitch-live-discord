@@ -16,7 +16,7 @@ Python script to authenticate against the [Twitch API](https://dev.twitch.tv/doc
 
 ``` bash
 brew install python
-pip3 install python-dotenv requests
+/opt/homebrew/bin/python3 -m pip install --break-system-packages python-dotenv requests
 ```
 
 * Create a `.env` file in the root directory to put the follow variables
