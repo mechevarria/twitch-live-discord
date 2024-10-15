@@ -16,7 +16,7 @@ Python script to authenticate against the [Twitch API](https://dev.twitch.tv/doc
 
 ```bash
 brew install python
-/opt/homebrew/bin/python3 -m pip install --break-system-packages python-dotenv requests
+/opt/homebrew/bin/python3.11 -m pip install --break-system-packages python-dotenv requests
 ```
 
 * Create a `.env` file in the root directory to put the follow variables
@@ -33,7 +33,7 @@ WEBHOOK_URL="https://discord.com/api/webhooks/<REST OF THE URL>
 * Run the script to with the following command.
 
 ```bash
-python3 script.py
+/opt/homebrew/bin/python3.11 script.py
 ```
 
 * Example output in Discord
