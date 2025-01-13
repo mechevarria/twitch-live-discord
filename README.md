@@ -16,9 +16,11 @@ Python script to authenticate against the [Twitch API](https://dev.twitch.tv/doc
 
 ```bash
 brew install python
-brew install pipx
-pipx install python-dotenv requests --include-deps
-pipx ensurepath
+# create virtual environment and activate
+python3 -m venv $HOME/.venv
+source $HOME/.venv/bin/activate
+
+python3 -m pip install python-dotenv requests
 ```
 
 * Create a `.env` file in the root directory to put the follow variables
@@ -35,7 +37,7 @@ WEBHOOK_URL="https://discord.com/api/webhooks/<REST OF THE URL>
 * Run the script to with the following command.
 
 ```bash
-/opt/homebrew/bin/python3 script.py
+./bash-python.sh
 ```
 
 * Example output in Discord
@@ -47,11 +49,10 @@ WEBHOOK_URL="https://discord.com/api/webhooks/<REST OF THE URL>
 ### Windows
 * If you are using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install) you can launch with this command 
 ```bash
-wsl.exe "/usr/bin/python3" "/home/user/git/twitch-live-discord/script.py"
+wsl.exe "/bin/bash" "/home/user/git/twitch-live-discord/bash-python.sh"
 ```
 
 ### Mac
 * StreamDeck will only open `.sh` files so select `bash-python.sh`
-> you will need to edit the hardcoded path to `script.py` inside this file to match your system
 
 ![streamdeck](screenshots/stream-deck.png)
