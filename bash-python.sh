@@ -1,2 +1,3 @@
 #!/bin/bash
-/opt/homebrew/bin/python3 $HOME/git/twitch-live-discord/script.py
+source $HOME/.venv/bin/activate
+python3 $HOME/git/twitch-live-discord/script.py
