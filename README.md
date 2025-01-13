@@ -17,7 +17,7 @@ Python script to authenticate against the [Twitch API](https://dev.twitch.tv/doc
 ```bash
 brew install python
 brew install pipx
-pipx install python-dotenv requests
+pipx install python-dotenv requests --include-deps
 pipx ensurepath
 ```
 
@@ -35,7 +35,7 @@ WEBHOOK_URL="https://discord.com/api/webhooks/<REST OF THE URL>
 * Run the script to with the following command.
 
 ```bash
-/opt/homebrew/bin/python3.11 script.py
+/opt/homebrew/bin/python3 script.py
 ```
 
 * Example output in Discord
